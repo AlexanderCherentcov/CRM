@@ -1,0 +1,280 @@
+.client {
+  background-color: #f5f5f5;
+
+  // .client__container
+
+  &__container {
+  }
+
+  // .client__content
+
+  &__content {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  // .client__title
+
+  &__title {
+    margin-bottom: 30px;
+    font-size: rem(24);
+    line-height: 32px;
+    font-weight: 700;
+    color: #333;
+    @media (max-width: $mobile) {
+      font-size: rem(16);
+    }
+  }
+
+  // .client__action
+
+  &__action {
+    position: relative;
+    height: 300px;
+    background-color: #fff;
+    margin-bottom: 20px;
+    overflow: auto;
+  }
+
+  // .client__table
+
+  &__table {
+    width: 100%;
+    border-collapse: collapse;
+    @media (max-width: $mobile) {
+      overflow: auto;
+    }
+  }
+
+  // .client__tr-title
+
+  &__tr-title {
+    background-color: #f5f5f5;
+  }
+
+  // .client__item
+
+  &__item {
+    padding-top: rem(3);
+    padding-left: rem(2);
+  }
+
+  // .client__item-btn
+
+  &__item-btn {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    font-size: rem(12);
+    line-height: 16px;
+    color: #b0b0b0;
+    transition: color 0.3s ease-in-out;
+    @media (max-width: $mobile) {
+      font-size: rem(10);
+    }
+  }
+
+  // .client__item-img
+
+  &__item-img {
+    transform: rotate(180deg);
+    transition: transform 0.3s ease-in-out;
+  }
+
+  .active .client__item-img {
+    transform: rotate(0deg);
+  }
+
+  // .client__item-text
+
+  &__item-text {
+    position: relative;
+    font-size: rem(12);
+    line-height: 19px;
+    color: #b0b0b0;
+    font-weight: 200;
+    @media (max-width: $mobile) {
+      font-size: rem(10);
+    }
+  }
+
+  // .client__td
+
+  &__td {
+    height: 60px;
+    border-bottom: 2px solid #f5f5f5;
+    font-size: 14px;
+    line-height: 19px;
+    padding: 0 20px;
+    @media (max-width: $mobile) {
+      font-size: rem(12);
+    }
+  }
+
+  // .client__id
+
+  &__id {
+    color: #b0b0b0;
+  }
+
+  // .client__date-block
+
+  &__date-block {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+  }
+
+  // .client__date
+
+  &__date {
+  }
+
+  // .client__time
+
+  &__time {
+    color: #b0b0b0;
+  }
+
+  // .client__btn
+
+  &__btn {
+    display: inline-flex;
+    flex-direction: row-reverse;
+    gap: rem(5);
+    align-items: center;
+    justify-content: center;
+
+    &:not(:last-child) {
+      margin-right: rem(8);
+    }
+  }
+
+  &__action-btn {
+    display: flex;
+    align-items: center;
+    flex-direction: row-reverse;
+    gap: 10px;
+    margin: auto;
+    border: 1px solid #9873ff;
+    padding: 10px 20px;
+    font-size: rem(14);
+    line-height: 19px;
+    color: #9873ff;
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
+
+    svg {
+      fill: #9873ff;
+      transition: fill 0.3s ease-in-out;
+    }
+
+    &:hover,
+    &:focus-visible,
+    &:focus {
+      background-color: #9873ff;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+
+    &:hover svg,
+    &:focus-visible svg,
+    &:focus svg {
+      fill: #fff;
+    }
+
+    @media (max-width: $mobile) {
+      font-size: rem(12);
+    }
+  }
+
+  // .client__btn-img
+
+  &__btn-img {
+  }
+}
+
+.client__social-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  gap: rem(5);
+}
+
+.social-svg {
+  position: relative;
+  grid-column: span 1;
+  width: rem(16);
+  height: rem(16);
+  outline: none;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+
+  &:nth-child(n + 6) {
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:focus-visible,
+  &:focus svg {
+    fill: blue;
+  }
+
+  svg {
+    fill: #9873ff;
+    transition: fill 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+      fill: blue;
+    }
+  }
+}
+
+.client__social-list.active .social-svg {
+  opacity: 1;
+  visibility: visible;
+}
+
+.client__social-list {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: rem(5);
+  align-items: center;
+
+  @media (max-width: $tablet) {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.client__show-more {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: rem(2);
+  min-width: rem(16);
+  height: rem(16);
+  border: 1px solid #9873ff;
+  background-color: inherit;
+  border-radius: 100%;
+  color: black;
+  font-size: rem(8);
+  font-weight: 600;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out;
+  &:hover,
+  &:focus,
+  &:focus-visible,
+  &:active {
+    background-color: blue;
+    color: #fff;
+  }
+}

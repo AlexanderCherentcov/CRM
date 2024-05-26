@@ -1,0 +1,128 @@
+a,
+button {
+  outline: 0;
+}
+
+button {
+  padding: rem(4);
+  border-radius: 10px;
+  font-size: rem(14);
+  transition:
+    color 0.3s ease-in-out,
+    border 0.3s ease-in-out;
+  &:hover,
+  &:active {
+    color: #9873ff;
+  }
+
+  &:focus-visible {
+    border: 1px solid #9873ff;
+
+    color: #9873ff;
+  }
+  @media (max-width: $mobile) {
+    font-size: rem(12);
+  }
+}
+
+img {
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  height: auto;
+  display: block;
+}
+
+/* tooltip  */
+.tooltip-hidden {
+  position: absolute;
+  min-height: 30px;
+  z-index: 10;
+  top: -44px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  visibility: hidden;
+  transition:
+    opacity 0.3s ease-in-out,
+    visibility 0.3s ease-in-out;
+
+  clip-path: polygon(0% 0%, 100% 0%, 100% calc(100% - 10px), calc(50% + 10px) calc(100% - 10px), 50% 100%, calc(50% - 10px) calc(100% - 10px), 0% calc(100% - 10px));
+}
+
+.tooltip-visibility {
+  opacity: 1;
+  visibility: visible;
+}
+
+.tooltip__content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4px;
+  align-items: center;
+  padding: 10px 10px 20px 10px;
+  background-color: #000;
+  font-size: 12px;
+  line-height: 16px;
+  color: #fff;
+}
+
+.tooltip__content a {
+  cursor: pointer;
+  color: #b89eff;
+  border-bottom: 1px solid #9873ff;
+}
+
+.client-form-btn,
+.popup__btn-delete {
+  align-self: center;
+  border-radius: 0;
+
+  padding: rem(10) rem(20);
+  background-color: #8052ff;
+  color: #fff;
+  transition:
+    background-color 0.3s ease-in-out,
+    color 0.3s ease-in-out,
+    transform 0.3s ease-in-out;
+
+  &:hover,
+  &:focus-visible,
+  &:focus {
+    background-color: #fff;
+    color: #8052ff;
+  }
+
+  &:active {
+    transform: scale(1.2);
+  }
+
+  svg {
+    stroke: #9873ff;
+  }
+}
+
+.preloader-active {
+  stroke: #9873ff;
+}
+
+.delete-btn,
+.popup__btn-cancel {
+  align-self: center;
+  border-radius: 0;
+  font-size: rem(12);
+  border-bottom: 1px solid #000;
+
+  &:hover,
+  &:active {
+    color: #8052ff;
+    border-color: #8052ff;
+  }
+}
+
+.error-label {
+  color: red;
+  font-size: rem(12);
+  margin-bottom: rem(20);
+}

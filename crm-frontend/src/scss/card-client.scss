@@ -1,0 +1,179 @@
+.card {
+  // .card__client
+
+  &__client {
+    background-color: #f5f5f5;
+    height: 100vh;
+  }
+}
+.header {
+  // .header__container
+
+  &__container {
+  }
+
+  // .header__content
+
+  &__content {
+    justify-content: space-between;
+  }
+
+  // .header__link
+
+  &__link {
+  }
+
+  // .header__logo
+
+  &__logo {
+  }
+
+  // .header__btn
+
+  &__btn {
+    display: flex;
+    align-items: center;
+    border: 1px solid #9873ff;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: rem(14);
+    line-height: 19px;
+    color: #9873ff;
+    transition:
+      background-color 0.3s ease-in-out,
+      color 0.3s ease-in-out,
+      transform 0.3s ease-in-out;
+
+    &:hover,
+    &:focus-visible,
+    &:focus {
+      background-color: #9873ff;
+      color: #fff;
+    }
+
+    &:active {
+      transform: scale(1.2);
+    }
+    @media (max-width: $mobile) {
+      font-size: rem(12);
+    }
+  }
+}
+.container {
+}
+.card-client {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  // .card-client__container
+
+  &__container {
+  }
+
+  // .card-content__title
+
+  &__title {
+    margin-bottom: rem(15);
+    font-size: rem(20);
+
+    @media (max-width: $mobile) {
+      font-size: rem(16);
+    }
+  }
+
+  // .card-client__content
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: rem(2);
+  }
+}
+.card-content {
+  // .card-content__block
+
+  &__block {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    gap: rem(10);
+    padding: rem(10) rem(5);
+    background-color: #fff;
+    @media (max-width: $mobile) {
+      font-size: rem(12);
+    }
+  }
+
+  // .card-content__name
+
+  &__name {
+    font-weight: 600;
+  }
+
+  // .card-content__data
+
+  &__data {
+  }
+
+  // .card-content__date
+
+  &__date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(6);
+  }
+
+  // .card-content__name-block
+
+  &__name-block {
+  }
+
+  //.card-content__block-contact
+
+  &__block-contact {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: rem(2);
+  }
+
+  // .card-content__link
+
+  &__link {
+    transition:
+      color 0.3s ease-in-out,
+      border-bottom 0.3s ease-in-out;
+
+    &:hover,
+    &:active {
+      color: #9873ff;
+    }
+
+    &:focus-visible,
+    &:focus {
+      border-bottom: 1px solid #9873ff;
+      color: #9873ff;
+    }
+  }
+}
+.client {
+  // .client__date-block
+
+  &__date-block {
+  }
+
+  // .client__date
+
+  &__date {
+  }
+
+  // .client__time
+
+  &__time {
+  }
+}

@@ -1,0 +1,41 @@
+.preloader-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  visibility: hidden;
+  opacity: 0;
+  background-color: initial;
+}
+
+.preloader-active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.preloader-svg, .btn-preloader-svg {
+  transition: animation 0.5s ease;
+  animation: rotate 1s linear infinite;
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+}
+
+.btn-preloader {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  visibility: visible;
+  opacity: 1;
+}
+
+.btn-preloader-svg {
+  width: rem(30);
+  height: rem(30);
+}
