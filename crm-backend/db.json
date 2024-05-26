@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Александр",
+    "surname": "Черенцов",
+    "lastName": "Александрович",
+    "contacts": [
+      { "type": "Telegram", "value": "rteretretert" },
+      { "type": "Телефон", "value": "12345678901" },
+      { "type": "Телефон", "value": "12345678901" },
+      { "type": "E-mail", "value": "xSAIIIKAx@bk.ru" },
+      { "type": "Facebook", "value": "werwerewrew" },
+      { "type": "vk", "value": "retretreter" },
+      { "type": "E-mail", "value": "xSAIIIKAx@bk.ru" },
+      { "type": "E-mail", "value": "trytry@dsfgfdf.jk" }
+    ],
+    "id": "1703649894446",
+    "updatedAt": "2023-12-27T04:05:26.296Z",
+    "createdAt": "2023-12-27T04:04:54.446Z"
+  }
+]
