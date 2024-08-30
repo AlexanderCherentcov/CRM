@@ -18,7 +18,7 @@ This CRM application allows you to manage clients and their contact information.
 
 ## Installation and Setup
 
-To install and run the project locally, follow these steps:
+This project was built using Gulp version 4.0.2. To install and run the project locally, follow these steps:
 
 1. To install and run the project locally, follow these steps:
    ```bash
