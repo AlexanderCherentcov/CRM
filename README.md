@@ -1,4 +1,3 @@
-```markdown
 # CRM Application
 
 This CRM application allows you to manage clients and their contact information. It offers features for adding, editing, and deleting clients, as well as searching through the client list.
